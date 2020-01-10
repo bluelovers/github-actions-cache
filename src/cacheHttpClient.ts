@@ -61,7 +61,7 @@ function getRequestOptions(): IRequestOptions {
 function createRestClient(): RestClient {
     const token = process.env["ACTIONS_RUNTIME_TOKEN"] || "";
     const bearerCredentialHandler = new BearerCredentialHandler(token);
-
+    console.log(token != null && token.length);
     return new RestClient("actions/cache", getCacheApiUrl(), [
         bearerCredentialHandler
     ]);
