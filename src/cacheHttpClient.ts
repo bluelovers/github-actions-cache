@@ -42,7 +42,7 @@ function getCacheApiUrl(): string {
         );
     }
 
-    core.debug(`Cache Url: ${baseUrl}`);
+    core.info(`Cache Url: ${baseUrl}`);
     return `${baseUrl}_apis/artifactcache/`;
 }
 

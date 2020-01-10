@@ -1563,7 +1563,7 @@ function getCacheApiUrl() {
     if (!baseUrl) {
         throw new Error("Cache Service Url not found, unable to restore cache.");
     }
-    core.debug(`Cache Url: ${baseUrl}`);
+    core.info(`Cache Url: ${baseUrl}`);
     return `${baseUrl}_apis/artifactcache/`;
 }
 function createAcceptHeader(type, apiVersion) {
